@@ -1,0 +1,24 @@
+﻿@model Player
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Welcome to Press Your Luck!</h1>
+    </div>
+</div>
+<h3> Please, enter your name and the number of coins you have to get started.</h3>
+
+<form asp-controller="Player" asp-action="Index" method="post" enctype="application/x-www-form-urlencoded">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Name">Name:</label>
+        <input type="text" asp-for="Name" class="form-control" style="width:300px;" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Balance">Initial Balance:</label>
+        <input type="text" asp-for="Balance" class="form-control" style="width:300px;" />
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Start Playing!" />
+</form>

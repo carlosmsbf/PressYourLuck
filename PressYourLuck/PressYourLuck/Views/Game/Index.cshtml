@@ -1,0 +1,54 @@
+﻿@model GameModel
+
+@{
+    double balance = PressYourLuck.Helpers.CoinsHelper.GetTotalCoins(Context);
+}
+<div class="row">
+    <h3 class="col-8">Current Bet: @Model.CurrentBet.ToString("C2")</h3>
+    @if (!(@Model.CurrentBet == 0.00))
+    {
+        <a id="button" asp-controller="Player" asp-action="TakeCoins" class="btn btn-primary bg-success col-2" style="margin-left: 30px;">Take tge Coins</a>
+    }
+    else
+    {
+        if (balance != 0.00)
+        {
+            <a id="button" asp-controller="Home" asp-action="Index" class="btn btn-primary bg-danger col-2">Try Again</a>
+        }
+        else
+        {
+            <a id="button" asp-controller="Player" asp-action="CashOut" class="btn btn-primary bg-danger col-2">Try Again</a>
+        }
+    }
+</div>
+
+<div class="row" id="gamearea" style="margin-top:50px;">
+    @foreach (var tile in Model.Tiles)
+    {
+        <div class="col-2">
+            <div class="card" style="margin-left:10px;">
+                @if (tile.Visible == false)
+                {
+                    <img src="~/images/unknown.png" class="card-img-top" width="175" height="175" alt="...">
+                    <a asp-route-id="@tile.TileIndex" asp-action="TurnCard" class="btn btn-primary" style="width: 100px; margin-left: 30px; margin-top: 15px; margin-bottom: 15px; ">Choose</a>
+                }
+                else if (tile.Value == "0.00")
+                {
+                    <img src="~/images/bust.png" class="card-img-top" width="175" height="175" margin-right="5" alt="...">
+                    <div class="card-body">
+                        <div>@tile.Value</div>
+                    </div>
+                }
+                else
+                {
+                    <img src="~/images/money.png" class="card-img-top" width="175" height="175" margin-right="5" alt="...">
+
+                    <div class="card-body">
+                        <div>@tile.Value</div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>
+
