@@ -42,19 +42,7 @@ namespace PressYourLuck.Helpers
             return tileList;
         }
 
-        /*
-        * There are MANY other helpers you may want to create here.  I've created some
-        *  placeholder as well as hints for others you may find useful:
-        *
-        * 
-        * HINT: Remember that your HttpContext is not available in this class so you may
-        * need to pass it into methods that need it!
-        * 
-        */
 
-
-        // - GetCurrentGame - If there is no current game state in session Generate a New Game
-        // and store it in session, otherwise deserialize the List<Tile> from session
         public static List<Tile> GetCurrentGame(HttpContext ctx)
         {
             //code goes here
@@ -77,14 +65,11 @@ namespace PressYourLuck.Helpers
         */
         public static void PickTileAndUpdateGame(HttpContext ctx, int id)
         {
-            //code goes here
 
             List<Tile> cGame = GetCurrentGame(ctx);
             double multValue = double.Parse(cGame[id].Value);
 
             SaveCurrentGame(ctx, cGame);
-
-            
 
             double newBet = CoinsHelper.GetCurrentBet(ctx) * multValue;
 
@@ -122,20 +107,6 @@ namespace PressYourLuck.Helpers
             ctx.Session.Remove("currentBet");
         }
 
-        //- Finally, methods to serialize and deserialzie the Tile list.
-        //public static string SerializeTileList(/* parameters? */)
-        //{
-        //    var result = "";
-        //    //code goes here
-        //    return result;
-        //}
-
-        //public static List<Tile> DeserializeTileList(/* parameters? */)
-        //{
-        //    var results = new List<Tile>();
-        //    //code goes here
-        //    return results;
-        //}
 
         public static void SaveCurrentName(HttpContext ctx, string name)
         {
@@ -146,7 +117,6 @@ namespace PressYourLuck.Helpers
         {
             return ctx.Request.Cookies["player-name"];
         }
-
         public static double TakeCoins(HttpContext context)
         {
             double totalCoins = CoinsHelper.GetTotalCoins(context);

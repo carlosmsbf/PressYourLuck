@@ -8,18 +8,6 @@ namespace PressYourLuck.Helpers
 {
     public static class CoinsHelper
     {
-        /*
-         * Consider using this helper to Get and Set the Current Bet and the original bet
-         * (both in session variables), as well as adding a Get and Set for the player's
-         * total number of coins (which we'll store in Cookies)
-         * 
-         * HINT: Remember that HttpContext as well as Response and Request objects are not
-         * available from here, so you may need to pass those in from your controller.
-         * 
-         * I've coded the first one for you and have created placeholders for the rest.
-         * 
-         */
-
 
         private static CookieOptions expireDay = new CookieOptions
         {
@@ -58,7 +46,6 @@ namespace PressYourLuck.Helpers
         }
 
         //Save the players total number of coins into a cookie.  Don't forget to
-        // persist the cookie (Chapter 9!)
         public static void SaveTotalCoins(HttpContext ctx, double coins)
         {
             ctx.Response.Cookies.Append("coinsBalance", coins.ToString("N2"), expireDay);
