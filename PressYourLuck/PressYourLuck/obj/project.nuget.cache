@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GdV+rLeFRwqHWSVmvvSnF/VMDnCPB5srhF7zy2A9QpdOxjjMgGNbJEBtvujQdEpbsA7MzALwhylpLMRLN1uWuQ==",
+  "dgSpecHash": "WLcyVUZ2p2am8k7taQNl7ewAoolRRtkabEgFuNHwl8T9iXOMq8ftPkgeTNzR7R9dquxDae22fdqFCyvtrGzL8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck_CBarros9148\\PressYourLuck\\PressYourLuck\\PressYourLuck.csproj",
+  "projectFilePath": "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carlos Barros\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Carlos Barros\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

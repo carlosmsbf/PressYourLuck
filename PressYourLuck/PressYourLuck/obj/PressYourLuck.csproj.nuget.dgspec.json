@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck_CBarros9148\\PressYourLuck\\PressYourLuck\\PressYourLuck.csproj": {}
+    "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck_CBarros9148\\PressYourLuck\\PressYourLuck\\PressYourLuck.csproj": {
+    "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck_CBarros9148\\PressYourLuck\\PressYourLuck\\PressYourLuck.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck.csproj",
         "projectName": "PressYourLuck",
-        "projectPath": "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck_CBarros9148\\PressYourLuck\\PressYourLuck\\PressYourLuck.csproj",
+        "projectPath": "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck.csproj",
         "packagesPath": "C:\\Users\\Carlos Barros\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck_CBarros9148\\PressYourLuck\\PressYourLuck\\obj\\",
+        "outputPath": "C:\\Users\\Carlos Barros\\Downloads\\PressYourLuck\\PressYourLuck\\PressYourLuck\\PressYourLuck\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

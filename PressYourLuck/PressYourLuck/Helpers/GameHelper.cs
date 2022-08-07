@@ -59,10 +59,6 @@ namespace PressYourLuck.Helpers
             ctx.Session.SetString("tList", JsonConvert.SerializeObject(tiles));
         }
 
-       /* - PickATileAndUpdateGame - code that contains the game logic as 
-        * mentioned in Part 4 of the assignment. Hint: you'll need to pass in the
-        * id of the selected tile as one of the parameters.
-        */
         public static void PickTileAndUpdateGame(HttpContext ctx, int id)
         {
 
